@@ -1,0 +1,37 @@
+.info {
+    margin-top: $margin-top-xbig;
+    margin-bottom: $margin-bottom-big;
+    padding-left: 2rem;
+    &__title {
+        @include title-container;
+
+        &__sub {
+            @include sub-title;
+        }
+
+        &__paragraph {
+        @include paragraph;
+        }
+    }
+    &__plus {
+        display: flex;
+
+        &__right{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: space-evenly;
+        }
+    }
+}
+.info-item{
+    width: 56%;
+    padding-left: 4.5rem;
+
+    &__sub {
+        @include sub-sub-title;
+    }
+    &__text{
+        @include text;
+    }
+}

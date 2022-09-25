@@ -1,0 +1,50 @@
+.tools{
+    margin-top: $margin-top-big;
+
+    &__title{
+        @include title-container;
+        &_sub{
+            @include sub-title;
+        }
+        &_paragraph{
+            @include paragraph;     
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+
+        &-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 28rem;
+            flex-grow: 1;
+            padding-right: 1rem;
+
+            &-sub {
+                @include sub-sub-title;
+                text-align: center;
+                padding-top: 2rem
+            }
+
+            &-p {
+                @include text;
+                text-align: center;
+            }
+        }        
+    }
+
+    &__pages {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: $margin-top-xbig;
+    }
+}
+
+

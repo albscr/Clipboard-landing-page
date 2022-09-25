@@ -1,0 +1,18 @@
+.download {
+    margin-top: $margin-top-xbig;
+    &__title{
+        @include title-container;
+        &_sub{
+            @include sub-title;
+        }
+        &_paragraph{
+            @include paragraph;     
+        }
+    }
+    &__btn{
+        @include buttons;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

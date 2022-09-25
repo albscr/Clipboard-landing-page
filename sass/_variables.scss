@@ -1,0 +1,101 @@
+//variables
+$primary-color: hsl(171, 66%, 44%);
+$primary-color-hover: hsl(171, 65%, 50%);
+$primary-color-trans: hsla(171, 65%, 50%, 0.619);
+$secundary-color: hsl(233, 100%, 69%);
+$secundary-color-hover: hsl(233, 100%, 75%);
+$secundary-color-trans: hsla(233, 100%, 75%, 0.619);
+$color-neutral-1: hsl(210, 10%, 33%);
+$color-neutral-2: hsl(201, 11%, 66%);
+
+$margin-top-xbig: 7rem;
+$margin-top-big: 2rem;
+$margin-top-small: 1rem;
+$margin-bottom-big: 3rem;
+$margin-bottom-small: 1rem;
+$padding-top: 5rem;
+
+@mixin title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $margin-bottom-small;
+}
+
+@mixin sub-title {
+    color: $color-neutral-1;
+    font-size: 2rem;
+    margin-bottom: $margin-bottom-small;
+    text-align: center;
+}
+
+
+@mixin paragraph {
+    color: $color-neutral-2;
+    width: 47%;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: $margin-bottom-big;
+}
+
+@mixin sub-sub-title {
+    font-size: 1.4rem;
+    color: $color-neutral-1;
+    padding-bottom: .8rem;
+}
+
+@mixin text {
+    font-size: 1.1rem;
+    color: $color-neutral-2;
+}
+
+@mixin buttons {
+    margin-top: $margin-top-big;
+        &__green, &__blue{
+            font-family: inherit;
+            letter-spacing: 1.5px;
+            border: solid transparent;
+            border-radius: 80px;
+            color: white;
+            padding: .7rem 2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1rem;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            overflow: hidden;   
+                  
+        }
+        &__green {            
+            background-color: $primary-color;  
+            margin-right: 1rem;         
+        }
+        &__green:hover {
+            background-color: $primary-color-hover;
+            box-shadow: 0px 15px 20px $primary-color-trans;
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        &__green:active {
+            transform: translateY(-1px);
+        }
+        &__blue {
+            background-color: $secundary-color;           
+        }
+        &__blue:hover {
+            background-color: $secundary-color-hover;
+            box-shadow: 0px 15px 20px $secundary-color-trans;
+            color: #fff;
+            transform: translateY(-7px);
+        }
+        &__blue:active {
+            transform: translateY(-1px);
+        }
+}
