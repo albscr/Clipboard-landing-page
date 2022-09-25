@@ -329,10 +329,7 @@
   fill: hsl(171deg, 66%, 44%);
 }
 
-@media (min-width: 2500px) {
-  .header {
-    height: 50rem;
-  }
+@media (min-width: 1401) and (max-width: 2500px) {
   .header__title {
     font-size: 4rem;
     margin-top: 7rem;
@@ -437,7 +434,7 @@
     width: 50px;
   }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .info__plus__right {
     width: 60%;
   }
@@ -456,40 +453,43 @@
     align-items: flex-start;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .header {
     background-image: url(/images/bg-header-mobile.png);
     height: 40rem;
   }
   .header__logo {
-    padding-top: 20rem;
+    padding-top: 15rem;
   }
   .header__title {
     text-align: center;
+    font-size: 2.5rem;
   }
   .header__note {
     width: 80%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .header__btn {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
   .header__btn__green, .header__btn__blue {
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
-    padding: 1rem 3rem;
+    font-size: 1.3rem;
+    padding: 1rem 2.5rem;
   }
   .info {
-    margin-top: 20rem;
+    margin-top: 15rem;
   }
   .info__title__sub {
     font-size: 2rem;
   }
   .info__title__paragraph {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 80%;
   }
   .info__plus {
@@ -508,6 +508,8 @@
   }
   .tools__list {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .tools__list-container {
     padding-bottom: 2rem;
@@ -525,12 +527,11 @@
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
   .download__btn__green, .download__btn__blue {
-    font-size: 1.5rem;
-    padding: 1rem 3rem;
-    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    padding: 1rem 2.5rem;
+    margin-bottom: 1rem;
   }
   .footer__container {
     flex-direction: column;
@@ -538,11 +539,23 @@
     align-items: center;
     height: auto;
   }
+  .footer__container-logo {
+    margin-top: 1rem;
+  }
   .footer__container-opt {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1rem;
+  }
+  .footer_container-opt-link:link,
+.footer_container-opt-link:visited,
+.footer_container-opt-link:active {
+    padding-top: 1rem;
+    padding-right: 0;
+  }
+  .svg-social {
+    margin: 1rem;
   }
 }
 /* Box sizing rules */

@@ -1,8 +1,6 @@
 //BIG SCREEN
-@media (min-width:2500px) {
+@media (min-width:1401)and(max-width:2500px) {
     .header {
-        height: 50rem;
-
         &__title {
             font-size: 4rem;
             margin-top: $margin-top-xbig;
@@ -155,7 +153,7 @@
 }
 
 //TABLE LAND-CAPE
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     .info {
         &__plus {
             &__right {
@@ -186,103 +184,135 @@
 }
 
 //MOBILE
-@media (min-width:768px) {
+@media (max-width:768px){
     .header {
         background-image: url(/images/bg-header-mobile.png);
         height: 40rem;
+
         &__logo {
-            padding-top: 20rem;
+            padding-top: 15rem;
         }
 
         &__title {
             text-align: center;
+            font-size: 2.5rem;
         }
-        &__note{
+
+        &__note {
             width: 80%;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
         }
+
         &__btn {
-            margin-bottom: $margin-bottom-big;
+            margin-bottom: $margin-bottom-small;
+
             &__green,
             &__blue {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: $margin-bottom-small;
-                font-size: 1.5rem;
-                padding: 1rem 3rem;
+                font-size: 1.3rem;
+                padding: 1rem 2.5rem;
             }
         }
     }
+
     .info {
-        margin-top: 20rem;
-        &__title__sub{
+        margin-top: 15rem;
+
+        &__title__sub {
             font-size: 2rem;
         }
-        &__title__paragraph{
-            font-size: 1.3rem;
+
+        &__title__paragraph {
+            font-size: 1.2rem;
             width: 80%;
         }
-        &__plus{
+
+        &__plus {
             flex-direction: column;
-            &__right{
+
+            &__right {
                 width: 90%;
                 text-align: center;
                 align-items: center;
-               
+
             }
         }
-        .info-item{
+        .info-item {
             padding-top: 3rem;
         }
     }
-    .access__title_paragraph{
+
+    .access__title_paragraph {
         width: 80%;
     }
-    .tools{
-        &__list{
-            flex-direction: column;            
-            &-container{
+
+    .tools {
+        &__list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &-container {
                 padding-bottom: 2rem;
             }
         }
-        &__pages{
+
+        &__pages {
             flex-direction: column;
-            &-logo{
-            padding-bottom: 2.5rem;
+
+            &-logo {
+                padding-bottom: 2.5rem;
             }
         }
     }
-    .download{
-        &__title_paragraph{
+
+    .download {
+        &__title_paragraph {
             width: 80%;
         }
         &__btn {
             margin-bottom: $margin-bottom-big;
-            display:flex;
-            flex-direction: column;
-            width: 100%; 
-
+            display: flex;
+            flex-direction: column;        
             &__green,
-            &__blue {                                                        
-                font-size: 1.5rem;
-                padding: 1rem 3rem;
-                margin-bottom: 2rem;
+            &__blue {
+                font-size: 1.3rem;
+                padding: 1rem 2.5rem;
+                margin-bottom: $margin-bottom-small;                                
             }
         }
-        
     }
-    .footer__container{
+    .footer__container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: auto;
-        &-opt{
+
+        &-logo {
+            margin-top: 1rem;
+        }
+
+        &-opt {
             display: flex;
             flex-direction: column;
-            align-items:center;
+            align-items: center;
             padding-bottom: 1rem;
-            
         }
+    }
+
+    .footer_container-opt-link:link,
+    .footer_container-opt-link:visited,
+    .footer_container-opt-link:active {
+        padding-top: 1rem;
+        padding-right: 0;
+    }
+
+    .svg-social {
+        margin: 1rem;
     }
 }
